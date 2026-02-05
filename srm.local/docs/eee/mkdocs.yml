@@ -1,0 +1,113 @@
+site_name: B.Tech EEE - SRMIST
+site_description: Complete information about B.Tech Electrical & Electronics Engineering program at SRM Institute of Science and Technology
+site_author: SRMIST
+site_url: https://yourusername.github.io/srm-eee-docs/
+
+# Repository
+repo_name: Your Repository
+repo_url: https://github.com/yourusername/srm-eee-docs
+
+# Copyright
+copyright: Copyright &copy; 2026 SRM Institute of Science and Technology
+
+# Theme Configuration
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+  
+  icon:
+    repo: fontawesome/brands/github
+  
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: true
+
+# Navigation
+nav:
+  - Home: index.md
+  - Eligibility: eligibility.md
+  - Admission Process: admission.md
+  - Curriculum: curriculum.md
+  - Contact & Facilities: contact.md
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+
+# Extra
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/SRMUniversityOfficial
+      name: SRMIST on Facebook
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/SRM_Univ
+      name: SRMIST on Twitter
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/SRMUniversityOfficial/
+      name: SRMIST on Instagram
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/srm-ist-chennai
+      name: SRMIST on LinkedIn
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/SRMeducation
+      name: SRMIST on YouTube
+  
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # Replace with your Google Analytics ID
+
+# Custom CSS
+extra_css:
+  - stylesheets/extra.css
+
+# Custom JavaScript
+extra_javascript:
+  - javascripts/extra.js
